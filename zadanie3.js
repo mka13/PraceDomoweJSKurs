@@ -7,6 +7,7 @@ function parzysteSlowa(slowo) {
             bufor.push(slowo[i]);
         }
     }
+    // miało zwrócic string ;)
     return bufor;
 }
 
@@ -47,7 +48,9 @@ function konwersjaSlowa(slowo) {
  
         bufor=bufor + zamianaZnakow(slowo[i]);
     }
-
+    
+    // czy ta funkcja musi byc wewnetrzna ?
+    // i wtedy czy break bedzie dobra instrukcją wyjscia ?
     function zamianaZnakow(znak) {
         let bufor = znak.toUpperCase();
         switch (bufor) {
